@@ -1,8 +1,6 @@
 import Head from 'next/head';
-import Image from 'next/image';
-import buildspaceLogo from '../assets/buildspace-logo.png';
 import { useState } from 'react';
-
+import { LinkedinShareButton } from "react-share"; 
 
 const Home = () => {
   const [userInput, setUserInput] = useState('');
@@ -73,15 +71,25 @@ const Home = () => {
             <div className="output">
               <div className="output-header-container">
                 <div className="output-header">
-                  <h3>Output</h3>
+                  <h3>Your Announcement</h3>
                 </div>
               </div>
               <div className="output-content">
                 <p>{apiOutput}</p>
+                <LinkedinShareButton
+                  title='Hey you fuckers'
+                  summary='This is a linkedin post'
+                  source="this is the source"
+                  url='www.google.com'
+                  children = {
+                    <p><b>Share on LinkedIn</b></p>
+                  }
+                  />
               </div>
             </div>
           )}
         </div>
+        <p className="made-by">💩 Made by Marvin Beckmann</p>
       </div>
     </div>
   );

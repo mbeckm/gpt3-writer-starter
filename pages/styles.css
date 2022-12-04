@@ -311,6 +311,17 @@ textarea {
 }
 
 .output-content {
+    border-bottom-width: 1px;
+    border-color: rgba(255, 255, 255, 0.1);
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-style: solid;
+    border-top-width: 1px;
+    padding: 20px;
+    place-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
     outline: none;
     display: flex;
     /* max-width: 25%; */
@@ -323,7 +334,19 @@ textarea {
 .output-content p {
     text-align: center;
     white-space: pre-line;
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 1);
+}
+
+.react-share__ShareButton {
+    background-color: #0072b1 !important;
+    color: white;
+    opacity: 1;
+    padding: 0px 15px !important;
+    border-radius: 8px !important;
+}
+
+.made-by {
+    color: white;
 }
 
 @media (min-width: 810px) and (max-width: 1199px) {
